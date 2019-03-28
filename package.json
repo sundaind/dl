@@ -1,0 +1,40 @@
+{
+  "name": "yatogami",
+  "version": "1.8.3",
+  "description": "Yatogami, discord bot simple to use written in discord.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SharifPoetra/yatogami.git"
+  },
+  "keywords": [
+    "discord-bot"
+  ],
+  "author": "Sharif",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SharifPoetra/yatogami/issues"
+  },
+  "homepage": "https://github.com/SharifPoetra/yatogami#readme",
+  "dependencies": {
+    "canvas": "github:Automattic/node-canvas#92b192447e9b9ae98da0f801e4e34afdd1dc1ef8",
+    "canvas-constructor": "github:kyranet/canvasConstructor",
+    "common-tags": "^1.8.0",
+    "cpu-stat": "^2.0.1",
+    "discord-economy": "^1.1.4",
+    "discord-leveling": "^1.0.0",
+    "discord.js": "^11.4.2",
+    "dotenv": "^7.0.0",
+    "fs": "0.0.1-security",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "node-kitsu": "^1.1.1",
+    "node-superfetch": "^0.1.9",
+    "osunext-sig": "^1.0.3",
+    "parse-ms": "^2.0.0",
+    "quick.db": "^7.0.0-b16"
+  }
+}
