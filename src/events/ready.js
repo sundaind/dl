@@ -25,10 +25,10 @@ module.exports = async client => {
   console.log(clientonmessage) 
   function randStatus() {
     let status = [
-      `with ${botUsers} users`,
-      `y!help for help`,
-      `in ${botGuilds} guilds`, 
-      `Hye, Hallo, Hehe`
+      `Total ${botUsers} member!`,
+      `.help,bantuan`,
+      `digunakan ${botGuilds} server!`, 
+      `bot ekonomy`
      ];
     let rstatus = Math.floor(Math.random() * status.length);
     client.user.setActivity(status[rstatus], { type: 'PLAYING' });
