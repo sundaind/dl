@@ -13,11 +13,11 @@ exports.run = async(client, message, args, color) => {
         let timeObj = ms(cooldown - (Date.now() - lastdaily))
         let eh = require('../../../src/handle/cooldownAns.json');
         let ops = eh[Math.floor(Math.random() * eh.length)];
-        message.channel.send(`**${message.author.username}**, ${ops} (Ratelimited)\n**You'll be able to collect your next daily in ${timeObj.hours} hours, ${timeObj.minutes} minutes and ${timeObj.seconds} seconds**`)
+        message.channel.send(`**${message.author.username}**, ${ops} (Ratelimited)\n**Kamu bisa Mulung lagi dalam ${timeObj.hours} Jam, ${timeObj.minutes} Menit Dan ${timeObj.seconds} Detik**`)
     } else  {
         db.set(`lastDaily_${message.author.id}`, Date.now());        
           client.eco.AddToBalance(message.author.id, amount);
-          message.reply(`Collected daily ${client.config.coin_icon}${amount} ${client.config.coin}`) 
+          message.reply(`Mulung Harian ${client.config.coin_icon}${amount} ${client.config.coin}`) 
   } 
 }
 
