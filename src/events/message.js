@@ -26,7 +26,7 @@ module.exports = async (client, message) => {
   let curlvl = xp.level;
   let nxtLvl = xp.level * 500;
   if(nxtLvl <= xp.xp) {
-    message.channel.send(`\🆙 | ${message.author} CONGRATS kamu Member Aktif dan Berhasil Naik ke **\`${curlvl + 1}\`**`)
+    message.channel.send(`\🆙 | ${message.author} CONGRATS kamu Member Aktif dan Berhasil Naik ke level **\`${curlvl + 1}\`**`)
   client.level.AddLevel(message.author.id, 1);
   } 
   client.level.AddXp(message.author.id, xpAdd);
