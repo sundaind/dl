@@ -26,12 +26,12 @@ module.exports = async client => {
   function randStatus() {
     let status = [
       `Total ${botUsers} member!`,
-      `.help,bantuan`,
+      `.help | bantuan`,
       `digunakan ${botGuilds} server!`, 
-      `bot ekonomy`
+      `Z DEV`
      ];
     let rstatus = Math.floor(Math.random() * status.length);
-    client.user.setActivity(status[rstatus], { type: 'PLAYING' });
+    client.user.setActivity(status[rstatus], { type: 'LISTENING' });
   };
   // update stats
   setInterval(() => client.updateStats(), 1000 * 60);
